@@ -1,7 +1,7 @@
 {
   "name": "protractor-cucumber",
   "description": "Cucumber support for protractor",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "homepage": "https://github.com/andrewkeig/protractor-cucumber",
   "author": {
     "name": "Andrew Keig",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "async": ">=0.2.10",
-    "protractor": ">=1.6.0",
+    "protractor": ">=4.0.4",
     "cucumber": ">=0.8.0",
     "selenium-webdriver": ">=2.44.0"
   },

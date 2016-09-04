@@ -1,7 +1,13 @@
 protractor-cucumber
 ==============
 
-protractor-cucumber allows one to drive protractor tests using cucumber
+protractor-cucumber allows one to drive protractor tests using cucumber.
+
+## Support for protractor v4.x
+
+This repository is a fork of [AndrewKeig/protractor-cucumber](https://github.com/AndrewKeig/protractor-cucumber) that aims to support protractor version 4 and above.
+
+Feel free to contribute to it until it is merged into the original repo.
 
 ## Installation
 
@@ -63,7 +69,7 @@ Now create a feature file, `features/homepage.feature`
 
 ```
 
-Feature: Homepage 
+Feature: Homepage
   As a user
   I want to visit the homepage
   So that I can access the various features on offer
@@ -93,9 +99,9 @@ var steps = function() {
   this.Then(/^I should see a "([^"]*)" link$/, function(link, callback) {
     support.findByBinding(this, link, function(result){
       result.getText().then (function(text){
-        text.trim().toLowerCase().should.equal(link.trim().toLowerCase());             
+        text.trim().toLowerCase().should.equal(link.trim().toLowerCase());
         setTimeout(callback, 1000);
-      });     
+      });
     });
   });
 
@@ -155,7 +161,7 @@ module.exports = new Support();
 ```
 
 
-Now run cucumber: 
+Now run cucumber:
 
 ```
 cucumber.js
@@ -166,12 +172,12 @@ cucumber.js
 
 Below is a list of properties/methods exposed on the world object
 
-### browser 
+### browser
 a wrapper around an instance of webdriver. Used for navigation and page-wide information.
 ### protractor
 the protractor lib
 ### by
-a collection of element locator strategies. 
+a collection of element locator strategies.
 ### assert
 our chosen assertion library, not required is using `should`
 ### baseUrl
